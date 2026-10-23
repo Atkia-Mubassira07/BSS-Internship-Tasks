@@ -2,7 +2,7 @@
 
 Welcome! This repository is my work log for the **BSS Software Engineering (SWE) Internship Program**. It holds every task, project and weekly note in one place, so supervisors and teammates can follow my progress and give feedback at any time.
 
-**Intern:** Mursaline Huqe
+**Intern:** Atkia Mubassira Nafisa
 **Program:** 4 months (16 weeks), 5 days a week, 9 hours a day
 **Status:** 🟡 In progress
 

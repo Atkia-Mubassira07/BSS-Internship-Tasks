@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    border: 3px solid red;
+}
+
+
+h2 {
+    color:red;
+    font-size: 30px;
+    }
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.sporty {
+    color:red;
+}
+
+.casual {
+    color: green;
+}
+
+.formal {
+    color: blue;
+}
+
+/*ID Selectors */
+#container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+
+}
+
+.sporty, .casual {
+    font-size: 35px;
+}
+
+#container p {
+    background: blue;
+}
+p {
+            color: red;
+            font-size: 20px;
+            text-decoration: underline;
+        } 

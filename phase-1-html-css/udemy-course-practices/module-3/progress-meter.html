@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox - Progress Meter</title>
+    <style>
+        meter::-webkit-meter-optimum-value {
+            background-color: #e86bd9;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Progress Meter</h1>
+
+    <!-- Progress -->
+    <label for="file">File progress:</label>
+    <progress id="file" max="100" value="50"></progress>
+
+    <!--Meter-->
+    <label for="fuel">Fuel:</label>
+    <meter id="fuel" min="0" max="100" value="50" low="30" high="90" optimal="80"> 50/100 </meter>
+
+  </body>
+</html>

@@ -264,7 +264,7 @@ body {
     background-color: #3F87F5;
 }
 
-/* Packages Section (4 Cards) */
+/* Packages Section */
 .packages-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -373,7 +373,7 @@ body {
     width: 100%;
 }
 
-/* Testimonials (3 Cards) */
+/* Testimonials */
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -496,6 +496,7 @@ details p {
 }
 
 /* Responsive Media Queries */
+
 @media (max-width: 992px) {
     .packages-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-grid { grid-template-columns: repeat(1, 1fr); }

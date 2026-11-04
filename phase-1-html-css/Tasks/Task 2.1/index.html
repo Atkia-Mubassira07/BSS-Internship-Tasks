@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abacus Convention Center</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+        <div class="brand">Abacus Convention Center</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section class="hero-slider">
+            <input type="radio" name="hero-slide" id="hero-slide-1" checked>
+            <input type="radio" name="hero-slide" id="hero-slide-2">
+            <input type="radio" name="hero-slide" id="hero-slide-3">
+            <input type="radio" name="hero-slide" id="hero-slide-4">
+
+            <div class="slides-wrapper">
+                <div class="slide slide-1" style="background-image: url('images/image1.jpg');"></div>
+                <div class="slide slide-2" style="background-image: url('images/image2.jpg');"></div>
+                <div class="slide slide-3" style="background-image: url('images/image3.jpg');"></div>
+                <div class="slide slide-4" style="background-image: url('images/image4.jpg');"></div>
+            </div>
+
+            <!-- Overlay Content -->
+            <div class="hero-overlay">
+                <h1>The perfect venue for your next event</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn-primary">Book Now</button>
+            </div>
+
+            <!-- Carousel Controls -->
+            <label class="slider-btn prev-btn prev-1" for="hero-slide-4"><i class="fa-solid fa-chevron-left"></i></label>
+            <label class="slider-btn prev-btn prev-2" for="hero-slide-1"><i class="fa-solid fa-chevron-left"></i></label>
+            <label class="slider-btn prev-btn prev-3" for="hero-slide-2"><i class="fa-solid fa-chevron-left"></i></label>
+            <label class="slider-btn prev-btn prev-4" for="hero-slide-3"><i class="fa-solid fa-chevron-left"></i></label>
+            <label class="slider-btn next-btn next-1" for="hero-slide-2"><i class="fa-solid fa-chevron-right"></i></label>
+            <label class="slider-btn next-btn next-2" for="hero-slide-3"><i class="fa-solid fa-chevron-right"></i></label>
+            <label class="slider-btn next-btn next-3" for="hero-slide-4"><i class="fa-solid fa-chevron-right"></i></label>
+            <label class="slider-btn next-btn next-4" for="hero-slide-1"><i class="fa-solid fa-chevron-right"></i></label>
+
+            <!-- Bottom Slide Indicators -->
+            <div class="slider-indicators">
+                <label class="indicator" for="hero-slide-1"></label>
+                <label class="indicator" for="hero-slide-2"></label>
+                <label class="indicator" for="hero-slide-3"></label>
+                <label class="indicator" for="hero-slide-4"></label>
+            </div>
+        </section>
+
+<!-- Feature Section (Left: Heading, Paragraph, Button | Right: Image) -->
+        <section class="section feature-section">
+            <div class="container feature-container">
+                <div class="feature-text">
+                    <h2>Every moment is Precious</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button class="btn-purple">Explore our album &rarr;</button>
+                </div>
+                <div class="feature-image">
+                    <img src="images/image2.jpg" alt="Precious Moment">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Packages (4 Cards Side by Side) -->
+        <section class="section packages-section">
+            <h2 class="section-title">Our Package</h2>
+            <div class="container packages-grid">
+                <!-- Card 1 -->
+                <div class="card pricing-card">
+                    <h3>$300</h3>
+                    <h4>Business fair</h4>
+                    <p class="card-desc">For most businesses that want to optimize performance.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> limited space access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Secuirty facility</li>
+                        <li><i class="fa-regular fa-circle-check"></i> event support</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Decoration design</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Per day bill</li>
+                    </ul>
+                    <button class="btn-outline">Choose plan</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card pricing-card">
+                    <h3>$500</h3>
+                    <h4>wedding basic</h4>
+                    <p class="card-desc">For weddings with basic plan and limited item.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Full space access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Food arrangement</li>
+                        <li><i class="fa-regular fa-circle-check"></i> management support</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Decoration design</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Billed as shift</li>
+                    </ul>
+                    <button class="btn-outline">Choose plan</button>
+                </div>
+
+                <!-- Card 3 (Featured/Hot) -->
+                <div class="card pricing-card featured">
+                    <span class="badge">Hot</span>
+                    <h3>$800</h3>
+                    <h4>Wedding plus</h4>
+                    <p class="card-desc">For most weddings with premium plans.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Full space access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Dedicated team</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Buffet food</li>
+                        <li><i class="fa-regular fa-circle-check"></i> premium Decoration</li>
+                        <li><i class="fa-regular fa-circle-check"></i> pay as plan</li>
+                    </ul>
+                    <button class="btn-white">Choose plan</button>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card pricing-card">
+                    <h3>$1200</h3>
+                    <h4>Corporate event</h4>
+                    <p class="card-desc">For most corporate business events.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Full space access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Dedicated team</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Buffet food</li>
+                        <li><i class="fa-regular fa-circle-check"></i> premium Decoration</li>
+                        <li><i class="fa-regular fa-circle-check"></i> pay as plan</li>
+                    </ul>
+                    <button class="btn-outline">Choose plan</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials (3 Cards Side by Side) -->
+        <section class="section testimonials-section">
+            <h2 class="section-title">Happy Clients says</h2>
+            <div class="container testimonials-grid">
+                <div class="card testimonial-card">
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                    <div class="client-info">
+                        <img src="images/user-image1.png" alt="Regina Miles">
+                        <h5>Regina Miles</h5>
+                        <span>Banker</span>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                    <div class="client-info">
+                        <img src="images/user-image2.png" alt="Jone Drake">
+                        <h5>Jone Drake</h5>
+                        <span>Banker</span>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                    <div class="client-info">
+                        <img src="images/user-image3.png" alt="Cret Yater">
+                        <h5>Cret Yater</h5>
+                        <span>Banker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Left Accordion, Right Image) -->
+        <section class="section faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="container faq-container">
+                <div class="accordion-stack">
+                    <details open>
+                        <summary>What's the difference between event design and event planning?</summary>
+                        <p>Event design and event planning work hand in hand to deliver a successful event. Event design deals with visual styling and aesthetic aspects, while planning handles logistics, vendor quotes, and execution schedules.</p>
+                    </details>
+                    <details>
+                        <summary>How early should I book the venue?</summary>
+                        <p>We recommend booking at least 3 to 6 months in advance for corporate events and 6 to 12 months for weddings.</p>
+                    </details>
+                    <details>
+                        <summary>What is your refund and cancellation policy?</summary>
+                        <p>Cancellations made 30 days prior to the event date receive a full deposit refund minus processing fees.</p>
+                    </details>
+                    <details>
+                        <summary>How do you keep budgets on track?</summary>
+                        <p>We provide transparent itemized cost sheets and regular updates before committing to any additional expenses.</p>
+                    </details>
+                </div>
+                <div class="faq-image">
+                    <img src="images/image3.jpg" alt="Event crowd">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 bike. All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <span>Get the App</span>
+                <div class="app-buttons">
+                    <a href="#" class="store-btn"><i class="fa-brands fa-apple"></i> App Store</a>
+                    <a href="#" class="store-btn"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

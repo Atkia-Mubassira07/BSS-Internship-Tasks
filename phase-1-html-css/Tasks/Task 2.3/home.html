@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant | Saudi Cuisine</title>
+    <title>Furniro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,24 +13,24 @@
 </head>
 <body>
     <header class="header">
-        <nav clas="nav-bar">
+        <nav class="navbar">
             <a href="#" class="logo">
                 <img src="images/Meubel House_Logos-05.png" alt="logo" class="logo-img">
                 <span>Furniro</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
             <ul class="nav-icons">
-                <li><a href="#"><img src="images/search.svg" alt="User"></a></li>
-                <li><a href="#"><img src="images/cart.svg" alt="Search"></a></li>
-                <li><a href="#"><img src="images/user.svg" alt="Favourite"></a></li>
-                <li><a href="#"><img src="images/user.svg" alt="Cart"></a></li>
+                <li><a href="#"><img src="images/mdi_account-alert-outline.png" alt="User"></a></li>
+                <li><a href="#"><img src="images/ant-design_shopping-cart-outlined.png" alt="Cart"></a></li>
+                <li><a href="#"><img src="images/akar-icons_heart.png" alt="Favourite"></a></li>
+                <li><a href="#"><img src="images/akar-icons_search.png" alt="Search"></a></li>
             </ul>
         </nav>
     </header>
@@ -43,11 +43,11 @@
                 <h4>New Arrival</h4>
                 <h1>Discover Our <br> New Collection</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                <a href="#" class="btn">BUY NOW</a>
+                <a href="#" class="hero-content-btn">BUY NOW</a>
             </div>
         </section>
 
-        <section>
+        <section class="range-section">
             <div class="range-container">
                 <h2>
                     Browse The Range
@@ -59,303 +59,325 @@
 
                 <div class="range-grid">
                     <div class="range-card">
-                        <img src="images/range-1.png" alt="range-1">
+                        <div class="image-wrapper">
+                            <img src="images/image 106.png" alt="range-1">
+                        </div>
                         <h3>Dining</h3>
                     </div>
                     <div class="range-card">
-                        <img src="images/range-1.png" alt="range-2">
+                        <div class="image-wrapper">
+                            <img src="images/image 100.png" alt="range-1">
+                        </div>
                         <h3>Living</h3>
                     </div>
                     <div class="range-card">
-                        <img src="images/range-1.png" alt="range-3">
+                        <div class="image-wrapper">
+                            <img src="images/image 101.png" alt="range-1">
+                        </div>
                         <h3>Bedroom</h3>
                     </div>                                        
                 </div>
             </div>
         </section>
-
-        <section>
+        <section class="products-section">
             <div class="products-container">
                 <h2>Our Products</h2>
                 <div class="product-grid">
 
-                    <!-- Card 1 -->
+                    <!-- Card 1: Slytherine -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-1.png" alt="product-1">
+                        <span class="badge discount">-30%</span>
+                        <img src="images/Images.png" alt="Slytherine">
                         <div class="product-info">
                             <h3>Slytherine</h3>
                             <p>Stylish cafe chair</p>
-                            <p class="price">$ 120.00</p>
-                            <del>Rp 3,500.000</del>
+                            <div class="pricing">
+                                <span class="price">Rp 2.500.000</span>
+                                <del>Rp 3.500.000</del>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 1 End -->
 
-                   <!-- Card 2 -->
+                    <!-- Card 2: Leviosa -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-2.png" alt="product-2">
+                        <img src="images/image 106.png" alt="Leviosa">
                         <div class="product-info">
-                            <h3>Quill</h3>
-                            <p>Modern office chair</p>
-                            <p class="price">$ 150.00</p>
-                            <del>Rp 4,200.000</del>
+                            <h3>Leviosa</h3>
+                            <p>Stylish cafe chair</p>
+                            <div class="pricing">
+                                <span class="price">Rp 2.500.000</span>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 2 End -->
 
-                   <!-- Card 3 -->
+                    <!-- Card 3: Lolito -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-3.png" alt="product-3">
+                        <span class="badge discount">-50%</span>
+                        <img src="images/image 3.png" alt="Lolito">
                         <div class="product-info">
-                            <h3>Velvet</h3>
-                            <p>Soft and comfortable chair</p>
-                            <p class="price">$ 180.00</p>
-                            <del>Rp 5,000.000</del>
+                            <h3>Lolito</h3>
+                            <p>Luxury big sofa</p>
+                            <div class="pricing">
+                                <span class="price">Rp 7.000.000</span>
+                                <del>Rp 14.000.000</del>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 3 End -->
 
-                   <!-- Card 4 -->
+                    <!-- Card 4: Respira -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-4.png" alt="product-4">
+                        <span class="badge new">New</span>
+                        <img src="images/Images (1).png" alt="Respira">
                         <div class="product-info">
-                            <h3>Canvas</h3>
-                            <p>Modern office chair</p>
-                            <p class="price">$ 200.00</p>
-                            <del>Rp 5,500.000</del>
+                            <h3>Respira</h3>
+                            <p>Outdoor bar table and stool</p>
+                            <div class="pricing">
+                                <span class="price">Rp 500.000</span>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 4 End -->
 
-                   <!-- Card 5 -->
+                    <!-- Card 5: Grifo -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-5.png" alt="product-5">
+                        <img src="images/images (2).png" alt="Grifo">
                         <div class="product-info">
-                            <h3>Leather</h3>
-                            <p>Premium leather chair</p>
-                            <p class="price">$ 250.00</p>
-                            <del>Rp 6,000.000</del>
+                            <h3>Grifo</h3>
+                            <p>Night lamp</p>
+                            <div class="pricing">
+                                <span class="price">Rp 1.500.000</span>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 5 End -->
 
-                   <!-- Card 6 -->
+                    <!-- Card 6: Muggo -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-6.png" alt="product-6">
+                        <span class="badge new">New</span>
+                        <img src="images/Images (3).png" alt="Muggo">
                         <div class="product-info">
-                            <h3>Wooden</h3>
-                            <p>Classic wooden chair</p>
-                            <p class="price">$ 150.00</p>
-                            <del>Rp 4,000.000</del>
+                            <h3>Muggo</h3>
+                            <p>Small mug</p>
+                            <div class="pricing">
+                                <span class="price">Rp 150.000</span>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 6 End -->
 
-                   <!-- Card 7 -->
+                    <!-- Card 7: Pingky -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-7.png" alt="product-7">
+                        <span class="badge discount">-50%</span>
+                        <img src="images/Images (4).png" alt="Pingky">
                         <div class="product-info">
-                            <h3>Modern</h3>
-                            <p>Modern design table</p>
-                            <p class="price">$ 300.00</p>
-                            <del>Rp 8,000.000</del>
+                            <h3>Pingky</h3>
+                            <p>Cute bed set</p>
+                            <div class="pricing">
+                                <span class="price">Rp 7.000.000</span>
+                                <del>Rp 14.000.000</del>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 7 End -->
 
-                   <!-- Card 8 -->
+                    <!-- Card 8: Potty -->
                     <div class="product-card">
-                        <span class="discount">-30%</span>
-                        <img src="images/product-8.png" alt="product-8">
+                        <span class="badge new">New</span>
+                        <img src="images/Images (5).png" alt="Potty">
                         <div class="product-info">
-                            <h3>Minimalist</h3>
-                            <p>Minimalist design lamp</p>
-                            <p class="price">$ 100.00</p>
-                            <del>Rp 2,500.000</del>
+                            <h3>Potty</h3>
+                            <p>Minimalist flower pot</p>
+                            <div class="pricing">
+                                <span class="price">Rp 500.000</span>
+                            </div>
                         </div>
-
                         <div class="product-hover">
-                            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+                            <button class="add-to-cart-btn" type="button">Add to cart</button>
                             <div class="product-action">
-                                <button type="button" img="images/share.svg">Share</button>
-                                <button type="button" img="images/compare.svg">Compare</button>
-                                <button type="button" img="images/like.svg">Like</button>
+                                <button type="button"><img src="images/Vector.png" alt="Share"> Share</button>
+                                <button type="button"><img src="images/compare-svgrepo-com 1.png" alt="Compare"> Compare</button>
+                                <button type="button"><img src="images/Vector (1).png" alt="Like"> Like</button>
                             </div>
                         </div>
                     </div>
-                   <!-- Card 8 End -->
 
+                </div>
+
+                <!-- Show More Button -->
+                <div class="show-more-container">
+                    <button class="show-more-btn" type="button">Show More</button>
                 </div>
             </div>
         </section>
+        
+        <!-- Inspiration Section -->
 
-        <section>
+
+        <section class="inspiration-section">
             <div class="inspiration-container">
-
+                
+                <!-- Left Content Block -->
                 <div class="inspiration-content">
                     <h2>50+ Beautiful rooms inspiration</h2>
-                    <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+                    <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
                     <a href="#" class="explore-btn">Explore More</a>
                 </div>
 
-                <div class="inspiration-img">
-                    <img src="images/inspiration.png" alt="inspiration">
+                <!-- Right Slider Track -->
+                <div class="inspiration-slider">
+                    
+                    <!-- Slide 1 (Active) -->
+                    <div class="inspiration-slide" id="inspiration-slide-1">
+                        <img src="images/Images (1).png" alt="Bed Room Inspiration">
+
+                        <div class="inspiration-slide-hover">
+                            <div class="inspiration-text-box">
+                                <p>01 &mdash; Bed Room</p>
+                                <h3>Inner Peace</h3>
+                            </div>    
+                            <button class="arrow-btn" type="button">&rarr;</button>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="inspiration-slide" id="inspiration-slide-2">
+                        <img src="images/image 100.png" alt="Dining Room Inspiration">
+                        <div class="inspiration-slide-hover">
+                            <div class="inspiration-text-box">
+                                <p>02 &mdash; Dining</p>
+                                <h3>Modern Elegance</h3>
+                            </div>
+                            <button class="arrow-btn" type="button" aria-label="View dining room inspiration">&rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="inspiration-slide" id="inspiration-slide-3">
+                        <img src="images/image 101.png" alt="Living Room Inspiration">
+                        <div class="inspiration-slide-hover">
+                            <div class="inspiration-text-box">
+                                <p>03 &mdash; Living</p>
+                                <h3>Cozy Space</h3>
+                            </div>
+                            <button class="arrow-btn" type="button" aria-label="View living room inspiration">&rarr;</button>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
 
-                <div class="inspiration-text">
-                    <p>01 - Bed Room</p>
-                    <h3> Inner Peace</h3>
-
-                    <button class="arrow-btn">&rarr;</button>
+            <!-- Carousel Pagination Dots & Next Arrow -->
+            <div class="inspiration-controls">
+                <div class="dots">
+                    <a class="dot active" href="#inspiration-slide-1" aria-label="Show slide 1"></a>
+                    <a class="dot" href="#inspiration-slide-2" aria-label="Show slide 2"></a>
+                    <a class="dot" href="#inspiration-slide-3" aria-label="Show slide 3"></a>
                 </div>
-
-                <div class="inspiration-img">
-                    <img src="images/inspiration.png" alt="inspiration">
-                </div>
-
-                <div class="inspiration-text">
-                    <p>01 - Bed Room</p>
-                    <h3> Inner Peace</h3>
-
-                    <button class="arrow-btn">&rarr;</button>
-                </div>
-
-                <div class="inspiration-img">
-                    <img src="images/inspiration.png" alt="inspiration">
-                </div>
-
-                <div class="inspiration-text">
-                    <p>01 - Bed Room</p>
-                    <h3> Inner Peace</h3>
-
-                    <button class="arrow-btn">&rarr;</button>
-                </div>
-
-
-
-                <div class="inspiration-img">
-                    <img src="images/inspiration.png" alt="inspiration">
-                </div>
-
-                <div class="inspiration-text">
-                    <p>01 - Bed Room</p>
-                    <h3> Inner Peace</h3>
-
-                    <button class="arrow-btn">&rarr;</button>
-                </div>
+                <a class="next-slide-btn next-slide-2" href="#inspiration-slide-2" aria-label="Show next slide">&gt;</a>
+                <a class="next-slide-btn next-slide-3" href="#inspiration-slide-3" aria-label="Show next slide">&gt;</a>
+                <a class="next-slide-btn next-slide-1" href="#inspiration-slide-1" aria-label="Show first slide">&gt;</a>
+            </div>
             </section>
-            <section class="gallery-grid">
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+            <section class="gallery-section">
+                <div class="gallery-header">
+                    <p>Share your setup with</p>
+                    <h2>#FurniroFurniture</h2>
+                </div>
+            <div class="gallery-grid">
+                <div class="gallery-card item-1">
+                    <img src="images/Rectangle 36.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-2">
+                    <img src="images/Rectangle 37.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-3">
+                    <img src="images/Rectangle 38.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-4">
+                    <img src="images/Rectangle 39.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-5">
+                    <img src="images/Rectangle 37.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-6">
+                    <img src="images/Rectangle 37.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-7">
+                    <img src="images/Rectangle 38.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-8">
+                    <img src="images/Rectangle 39.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-9">
+                    <img src="images/Rectangle 40.png" alt="gallery-1">
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-10">
+                    <img src="images/Rectangle 41.png" alt="gallery-1">
                 </div>
-                <div class="gallery-card">
-                    <img src="images/gallery-1.png" alt="gallery-1">
+                <div class="gallery-card item-11">
+                    <img src="images/Rectangle 43.png" alt="gallery-1">
                 </div>
             </section>
 
@@ -364,7 +386,7 @@
             <footer class="footer">
                 <div class="footer-container">
                     <div class="footer-info">
-                        <h2>Furniro</h2>
+                        <h2>Furniro.</h2>
 
                         <p> 400 University Drive Suite 200 Coral Gables,<br>
                         FL 33134 USA</p>
@@ -404,7 +426,6 @@
                     <p>&copy; 2023 Furniro. All rights reserved.</p>
                 </div>
 
-            <script src="script.js"></script>    
             </footer>
             </div>
         </section>

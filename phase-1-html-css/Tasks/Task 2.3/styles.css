@@ -18,7 +18,6 @@ a {
     max-width: 1440px;
     height: 100px;
     top: 1px;
-    /* justify-content: space-between; */
     margin: auto;
     padding: 0 20px;
 }
@@ -26,12 +25,11 @@ a {
 .header {
     background: white;
     position: sticky;
-    /* justify-content: space-between; */
     top: 0px;
     z-index: 100;
 }
 
-/* 3-column Layout for standard Furniro layout */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -48,7 +46,7 @@ a {
     align-items: center;
     width: 130px;
     height: 41px;
-    /* gap: 5px; */
+    gap: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 34px;
@@ -97,7 +95,7 @@ a {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 73px;
+    gap: 63px;
     margin-left: auto;
     padding: 0;
 }
@@ -228,9 +226,6 @@ a {
     transition: transform 0.3s ease;
 }
 
-/* .range-card:hover img {
-    transform: scale(1.1);
-} */
 
 .range-card h3 {
     font-family: 'Poppins', sans-serif;
@@ -244,7 +239,7 @@ a {
 
 /* Our Products */
 .products-section {
-    padding: 60px 20px;
+    padding: 60px 20px 180px 20px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -291,7 +286,6 @@ a {
     object-fit: cover;
 }
 
-/* Product Information Area */
 .product-info {
     padding: 16px 20px 24px 20px;
 }
@@ -328,7 +322,7 @@ a {
     color: #b0b0b0;
 }
 
-/* Badges (Discount / New) */
+/* Badges */
 .badge {
     position: absolute;
     top: 24px;
@@ -379,7 +373,7 @@ a {
     visibility: visible;
 }
 
-/* Add to Cart Button on Hover */
+/* Add to Cart */
 .add-to-cart-btn {
     background-color: #ffffff;
     color: #b88e2f;
@@ -397,7 +391,7 @@ a {
     color: #ffffff;
 }
 
-/* Share / Compare / Like Actions */
+/* Share, Compare, Like Actions */
 .product-action {
     display: flex;
     align-items: center;
@@ -453,7 +447,7 @@ a {
 
 
 
-/* Inspiration Section Main Layout */
+/* Inspiration Section*/
 .inspiration-section {
     background-color: #fcf8f3; /* Soft cream background */
     padding: 80px 0;
@@ -461,7 +455,9 @@ a {
 }
 
 .inspiration-container {
-    max-width: 1320px;
+    width: 1440px;
+    height: 670px;
+    top: 2763px;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
@@ -470,7 +466,7 @@ a {
     gap: 40px;
 }
 
-/* Left Content Area */
+
 .inspiration-slide-hover {
     text-align: center;
 }
@@ -508,7 +504,7 @@ a {
     background-color: #9c7522;
 }
 
-/* Right Slider Area */
+
 .inspiration-slider {
     display: flex;
     gap: 24px;
@@ -524,7 +520,7 @@ a {
     display: none;
 }
 
-/* Individual Slide Card */
+
 .inspiration-slide {
     position: relative;
     min-width: 380px;
@@ -539,7 +535,7 @@ a {
     object-fit: cover;
 }
 
-/* Floating Text Box over the Image */
+
 .inspiration-text-box {
     position: absolute;
     bottom: 24px;
@@ -588,7 +584,7 @@ a {
     visibility: visible;
 }
 
-/* Floating Arrow Button inside the active slide */
+
 .inspiration-slide .arrow-btn {
     position: absolute;
     bottom: 24px;
@@ -610,7 +606,7 @@ a {
     background-color: #9c7522;
 }
 
-/* Carousel Controls (Dots & Next Arrow below) */
+
 .inspiration-controls {
     max-width: 1320px;
     margin: 30px auto 0;
@@ -704,20 +700,39 @@ a {
     color: #ffffff;
 }
 
-
+/* Gallery Section */
 
 .gallery-section {
+    position: relative;
     padding: 60px 0;
+    width: 1799px;
+    height: 780px;
+    margin-top: 80px;
+    top: 0;
+    left: 0;
     background-color: #ffffff;
     overflow: hidden;
 }
 
 .gallery-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
     text-align: center;
+    width: 356px;
+    height: 86px;
+    transform: translateX(-50%);
     margin-bottom: 30px;
 }
 
 .gallery-header p {
+    width: 222px;
+    height: 30px;
+    top: 3500px;
+    left: 592px;
+    margin: 0 auto;
+    line-height: 150%;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -726,26 +741,32 @@ a {
 }
 
 .gallery-header h2 {
+    width: 356px;
+    height: 48px;
+    top: 3538px;
+    left: 525px;
+    margin-top: 10px;
+    line-height: 120%;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #3a3a3a;
 }
 
-/* Multi-column asymmetrical Grid Layout */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: 80px;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    max-width: 1780px;
-    margin: 0 auto;
-    padding: 0 20px;
+    position: absolute;
+    display: block;
+    width: 1799px;
+    height: 721px;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
 }
 
 .gallery-card {
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -758,93 +779,95 @@ a {
     display: block;
 }
 
-/* Staggering individual items to match the collage layout */
 .gallery-card.item-1 {
-    grid-column: span 2;
-    grid-row: span 5;
+    left: 0;
+    top: 0;
+    width: 274px;
+    height: 382px;
 }
 
 .gallery-card.item-2 {
-    grid-column: span 4;
-    grid-row: span 4;
+    left: 0;
+    top: 398px;
+    width: 381px;
+    height: 323px;
 }
 
 .gallery-card.item-3 {
-    grid-column: span 2;
-    grid-row: span 3;
+    left: 290px;
+    top: 70px;
+    width: 451px;
+    height: 312px;
 }
 
 .gallery-card.item-4 {
-    grid-column: span 3;
-    grid-row: span 5;
+    left: 397px;
+    top: 398px;
+    width: 344px;
+    height: 242px;
+    opacity: 1;
+
 }
 
 .gallery-card.item-5 {
-    grid-column: span 3;
-    grid-row: span 6;
+    left: 757px;
+    top: 156px;
+    width: 295px;
+    height: 392px;
+    opacity: 1;
+
 }
 
 .gallery-card.item-6 {
-    grid-column: span 2;
-    grid-row: span 4;
+    left: 1068px;
+    top: 463px;
+    width: 178px;
+    height: 242px;
+    opacity: 1;
 }
 
 .gallery-card.item-7 {
-    grid-column: span 3;
-    grid-row: span 4;
+    left: 1068px;
+    top: 99px;
+    width: 290px;
+    height: 348px;
+    opacity: 1;
 }
 
 .gallery-card.item-8 {
-    grid-column: span 2;
-    grid-row: span 3;
+    left: 1262px;
+    top: 463px;
+    width: 258px;
+    height: 196px;
+    opacity: 1;
+
 }
 
 .gallery-card.item-9 {
-    grid-column: span 2;
-    grid-row: span 3;
+    left: 1374px;
+    top: 14px;
+    width: 425px;
+    height: 433px;
+    opacity: 1;
+
 }
 
 
-.gallery-section {
-    padding: 60px 0;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-
-.gallery-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.gallery-header p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #616161;
-    margin-bottom: 4px;
-}
-
-.gallery-header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: #3a3a3a;
-}
-
-/* Multi-column asymmetrical Grid Layout */
+/* Grid layout */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: 80px;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    max-width: 1780px;
-    margin: 0 auto;
-    padding: 0 20px;
+    position: absolute;
+    display: block;
+    width: 1799px;
+    height: 721px;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
 }
 
 .gallery-card {
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -857,7 +880,6 @@ a {
     display: block;
 }
 
-/* Staggering individual items to match the collage layout */
 .gallery-card.item-1 {
     grid-column: span 2;
     grid-row: span 5;
@@ -970,7 +992,7 @@ a {
     color: #b88e2f;
 }
 
-/* Newsletter Form Styling */
+/* Newsletter */
 .footer-newsletter form {
     display: flex;
     gap: 12px;
@@ -984,7 +1006,7 @@ a {
     font-size: 14px;
     color: #000000;
     outline: none;
-    width: 100%;
+    width: 60%;
 }
 
 .footer-newsletter input::placeholder {
@@ -1021,11 +1043,10 @@ a {
 .footer-copyright p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: #000000;
 }
 
-/*  */
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {
@@ -1049,6 +1070,8 @@ a {
     }
 
     .logo {
+        order: 1;
+        flex: 1 1 auto;
         font-size: 22px;
         min-width: 0;
         white-space: nowrap;
@@ -1088,9 +1111,9 @@ a {
     }
 
     .nav-toggle-label {
+        order: 3;
         display: flex;
-        grid-column: 3;
-        grid-row: 1;
+        flex: 0 0 26px;
         width: 26px;
         height: 30px;
         flex-direction: column;
@@ -1137,8 +1160,8 @@ a {
     }
 
     .nav-icons {
-        grid-column: 2;
-        grid-row: 1;
+        order: 2;
+        flex: 0 0 auto;
         gap: 6px;
     }
 
@@ -1151,28 +1174,29 @@ a {
     .hero {
         height: auto;
         min-height: 350px;
-        width:100%;
+        width: 100%;
         padding: 30px 5%;
     }
 
     .hero-content {
-        width: 300px;
-        height: 150px;
-        padding: 15px;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        padding: 24px;
     }
 
     .hero-content h1 {
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1.2;
     }
 
     .hero-content h4 {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.2;
     }
 
     .hero-content p {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 25px;
     }
 
@@ -1188,14 +1212,18 @@ a {
         padding: 40px 20px;
     }
 
-    /* Browse The Range Part */
+    /* Browse The Range */
     .range-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .range-card {
-        height: 300px;
+        height: auto;
+    }
+
+    .range-card .image-wrapper {
+        height: 260px;
     }
     
     .range-container h2 {
@@ -1209,17 +1237,19 @@ a {
     .range-card h3 {
         font-size: 14px;
     }
-    .range-item img {
-        width: 100%;
-        height: 200px;
-    }
-
     /* Our Products */
 
     .products-section {
         height: auto;
         width: 100%;
         padding: 40px 14px;
+    }
+
+    .products-container {
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
     }
 
     .products-container h2 {
@@ -1232,12 +1262,16 @@ a {
     }
 
     .product-card {
-        height: 300px;
+        height: auto;
     }
 
     .product-card img {
         width: 100%;
-        height: 280px;
+        height: 200px;
+    }
+
+    .product-info {
+        padding: 12px;
     }
 
     .product-info h3 {
@@ -1257,7 +1291,7 @@ a {
     }
 
     .product-hover {
-        height: 300px;
+        height: 100%;
     }
 
     .product-action button {
@@ -1296,6 +1330,9 @@ a {
     }
 
     .inspiration-container {
+        width: 100%;
+        height: auto;
+        padding: 0;
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -1314,11 +1351,13 @@ a {
     }
 
     .inspiration-slider {
+        width: 100%;
+        min-width: 0;
         gap: 12px;
     }
 
     .inspiration-slide {
-        min-width: 300px;
+        min-width: 100%;
         height: 400px;
     }
 
@@ -1339,14 +1378,17 @@ a {
 
     .inspiration-slide .arrow-btn {
         bottom: 12px;
-        left: 180px;
+        left: auto;
+        right: 12px;
         width: 32px;
         height: 32px;
         font-size: 14px;
     }
 
     .inspiration-controls {
+        width: 100%;
         margin-top: 20px;
+        padding: 0 14px;
     }
 
     .dots {
@@ -1359,84 +1401,144 @@ a {
     }
 
 
-    /* Furniture Gallery Grid */
+    /*Gallery Grid */
     .gallery-section {
+        position: relative;
+        overflow: hidden;
         height: auto;
         width: 100%;
-        padding: 40px 14px;
-        margin-bottom: -80px;
+        padding: 100px 14px 40px 0;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .gallery-header {
+        position: relative;
+        text-align: center;
+        left: auto;
+        height: auto;
+        transform: none;
+        margin-bottom: 30px;
+        padding: 0 0 20px 0;
     }
 
+
     .gallery-header p {
+        font-family:'Poppins', sans-serif;
+        font-weight: 600;
+        color: #616161;
         font-size: 14px;
     }
 
     .gallery-header h2 {
+        font-family:'Poppins', sans-serif;
         font-size: 24px;
+        font-weight: 700;
+        color: #3a3a3a;
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: 60px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(9, minmax(0, 1fr));
+        grid-auto-rows: 48px;
+        padding: 30px 0 0 0;
         gap: 4px;
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: auto;
+    }
+
+    .gallery-header {
+        position: absolute;
+        text-align: center;
+        top: 40px;
+        left: 50%;
+        z-index: 2;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%);
+    }
+
+    .gallery-card {
+        position: static;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 
     .gallery-card.item-1 {
+        padding: 10px;
+        background-color: white;
         grid-column: span 2;
-        grid-row: span 4;
+        grid-row: span 5;
     }
 
     .gallery-card.item-2 {
-        grid-column: span 3;
-        grid-row: span 3;
+        padding: 10px;
+        background-color: white;
+        grid-column: span 4;
+        grid-row: span 4;
     }
 
     .gallery-card.item-3 {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    .gallery-card.item-4 {
+        padding: 10px;
+        background-color: white;
         grid-column: span 2;
         grid-row: span 3;
     }
 
+    .gallery-card.item-4 {
+        padding: 10px;
+        background-color: white;
+        grid-column: span 3;
+        grid-row: span 5;
+    }
+
     .gallery-card.item-5 {
+        padding: 10px;
+        background-color: white;
+        grid-column: span 3;
+        grid-row: span 6;
+    }
+
+    .gallery-card.item-6 {
+        padding: 10px;
+        background-color: white;
+        grid-column: span 2;
+        grid-row: span 4;
+    }
+
+    .gallery-card.item-7 {
+        padding: 10px;
+        background-color: white;
         grid-column: span 3;
         grid-row: span 4;
     }
 
-    .gallery-card.item-6 {
-        grid-column: span 2;
-        grid-row: span 3;
-    }
-
-    .gallery-card.item-7 {
-        grid-column: span 2;
-        grid-row: span 3;
-    }
-
     .gallery-card.item-8 {
+        padding: 10px;
+        background-color: white;
         grid-column: span 2;
-        grid-row: span 2;
+        grid-row: span 3;
     }
 
     .gallery-card.item-9 {
+        padding: 10px;
+        background-color: white;
         grid-column: span 2;
-        grid-row: span 2;
+        grid-row: span 3;
     }
 
     .gallery-card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display:block;
     }
 
-    .gallery-card {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
 
     /* Footer */
     .footer {
@@ -1480,15 +1582,15 @@ a {
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        width: 100%;
-        gap: 8px;
+        width: 80%;
+        gap: 20px;
         max-width: 100%;
     }
 
 
     .footer-newsletter input {
         flex: 1 1 auto;
-        width: 100px;
+        width: 100%;
         font-size: 12px;
     }
 

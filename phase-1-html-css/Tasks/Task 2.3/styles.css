@@ -449,26 +449,20 @@ a {
 
 /* Inspiration Section*/
 .inspiration-section {
-    background-color: #fcf8f3; /* Soft cream background */
+    background-color: #fcf8f3;
     padding: 80px 0;
     overflow: hidden;
 }
 
 .inspiration-container {
-    width: 1440px;
+    width: 1200px;
     height: 670px;
-    top: 2763px;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns:400px 1fr;
     align-items: center;
     gap: 40px;
-}
-
-
-.inspiration-slide-hover {
-    text-align: center;
 }
 
 .inspiration-content h2 {
@@ -504,7 +498,6 @@ a {
     background-color: #9c7522;
 }
 
-
 .inspiration-slider {
     display: flex;
     gap: 24px;
@@ -514,12 +507,10 @@ a {
     scrollbar-width: none;
 }
 
-
-
 .inspiration-slider::-webkit-scrollbar {
     display: none;
-}
 
+}
 
 .inspiration-slide {
     position: relative;
@@ -537,15 +528,15 @@ a {
     display: block;
 }
 
-
 .inspiration-text-box {
     position: absolute;
     left: 24px;
     bottom: 24px;
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(4px);
     padding: 24px;
     min-width: 216px;
+    z-index: 4;
 }
 
 .inspiration-text-box p {
@@ -563,36 +554,29 @@ a {
     color: #3a3a3a;
 }
 
+
 .inspiration-slide-hover {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-    z-index: 5;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 3;
 }
 
 .inspiration-slide:hover .inspiration-slide-hover {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
 }
-
 
 .inspiration-slide .arrow-btn {
     position: absolute;
     bottom: 24px;
-    left: 240px;
+    left: 230px; 
     width: 48px;
     height: 48px;
     background-color: #b88e2f;
@@ -604,12 +588,19 @@ a {
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.inspiration-slide:hover .arrow-btn {
+    opacity: 1;
+    visibility: visible;
 }
 
 .inspiration-slide .arrow-btn:hover {
     background-color: #9c7522;
 }
-
 
 .inspiration-controls {
     max-width: 1320px;
@@ -637,7 +628,36 @@ a {
     cursor: pointer;
 }
 
-.dot.active {
+.inspiration-section:not(:has(:target)) .next-slide-2,
+.inspiration-section:has(#inspiration-slide-1:target) .next-slide-2 {
+    display: flex;
+}
+.inspiration-section:not(:has(:target)) .next-slide-3,
+.inspiration-section:not(:has(:target)) .next-slide-1,
+.inspiration-section:has(#inspiration-slide-1:target) .next-slide-3,
+.inspiration-section:has(#inspiration-slide-1:target) .next-slide-1 {
+    display: none;
+}
+
+.inspiration-section:has(#inspiration-slide-2:target) .next-slide-3 {
+    display: flex;
+}
+.inspiration-section:has(#inspiration-slide-2:target) .next-slide-1,
+.inspiration-section:has(#inspiration-slide-2:target) .next-slide-2 {
+    display: none;
+}
+
+.inspiration-section:has(#inspiration-slide-3:target) .next-slide-1 {
+    display: flex;
+}
+.inspiration-section:has(#inspiration-slide-3:target) .next-slide-2,
+.inspiration-section:has(#inspiration-slide-3:target) .next-slide-3 {
+    display: none;
+}
+
+/* Dot Active States*/
+.inspiration-section:not(:has(:target)) .dot[href="#inspiration-slide-1"],
+.inspiration-section:has(#inspiration-slide-1:target) .dot[href="#inspiration-slide-1"] {
     width: 27px;
     height: 27px;
     border: 2px solid #b88e2f;
@@ -645,7 +665,8 @@ a {
     position: relative;
 }
 
-.dot.active::after {
+.inspiration-section:not(:has(:target)) .dot[href="#inspiration-slide-1"]::after,
+.inspiration-section:has(#inspiration-slide-1:target) .dot[href="#inspiration-slide-1"]::after {
     content: '';
     position: absolute;
     top: 6px;
@@ -654,6 +675,19 @@ a {
     height: 11px;
     background-color: #b88e2f;
     border-radius: 50%;
+}
+
+.inspiration-section:not(:has(:target)) .dot:not([href="#inspiration-slide-1"]),
+.inspiration-section:has(#inspiration-slide-1:target) .dot:not([href="#inspiration-slide-1"]) {
+    width: 11px;
+    height: 11px;
+    border: 0;
+    background-color: #d8d8d8;
+}
+
+.inspiration-section:not(:has(:target)) .dot:not([href="#inspiration-slide-1"])::after,
+.inspiration-section:has(#inspiration-slide-1:target) .dot:not([href="#inspiration-slide-1"])::after {
+    display: none;
 }
 
 .inspiration-section:has(#inspiration-slide-2:target) .dot.active,
@@ -690,7 +724,6 @@ a {
     border-radius: 50%;
 }
 
-
 .next-slide-btn {
     width: 48px;
     height: 48px;
@@ -708,34 +741,6 @@ a {
     transition: all 0.2s;
     margin-left: auto;
     text-decoration: none;
-}
-
-.next-slide-3,
-.next-slide-1 {
-    display: none;
-}
-
-.inspiration-section:has(#inspiration-slide-2:target) .next-slide-2,
-.inspiration-section:has(#inspiration-slide-2:target) .next-slide-1 {
-    display: none;
-}
-
-.inspiration-section:has(#inspiration-slide-2:target) .next-slide-3 {
-    display: flex;
-}
-
-.inspiration-section:has(#inspiration-slide-3:target) .next-slide-2,
-.inspiration-section:has(#inspiration-slide-3:target) .next-slide-3 {
-    display: none;
-}
-
-.inspiration-section:has(#inspiration-slide-3:target) .next-slide-1 {
-    display: flex;
-}
-
-.next-slide-btn:hover {
-    background-color: #b88e2f;
-    color: #ffffff;
 }
 
 /* Gallery Section */
@@ -1369,7 +1374,7 @@ a {
 
     /* Room Inspiration */
     .inspiration-section {
-        height: 100vh;
+        height: auto;
         width: 100%;
         padding: 40px 14px;
     }
@@ -1399,36 +1404,94 @@ a {
         width: 100%;
         min-width: 0;
         gap: 12px;
+        scroll-behavior: auto;
     }
 
     .inspiration-slide {
-        min-width: 100%;
-        max-width: none;
+        max-width: 100%;
         height: 400px;
     }
-    
-    .inspiration-slide-hover .inspiration-text-box {
+
+    .inspiration-slide-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 5;
+    }
+
+    .inspiration-slide:active .inspiration-slide-hover,
+    .inspiration-slide:focus-within .inspiration-slide-hover,
+    .inspiration-slide:hover .inspiration-slide-hover {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .inspiration-text-box {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 12px;
-        left: 12px;
+        background: rgba(255, 255, 255, 0.85);
         padding: 12px;
-        min-width: 180px;
+        width: 130px;
+        min-width: 0;
+        z-index: 6;
+    }
+    
+    .inspiration-text-box p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        color: #616161;
+        margin-bottom: 4px;
     }
 
     .inspiration-text-box h3 {
-        font-size: 18px;
-    }
-
-    .inspiration-text-box p {
-        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3a3a3a;
     }
 
     .inspiration-slide .arrow-btn {
+        position: absolute;
         bottom: 12px;
+        right: 100px;
         left: auto;
-        right: 12px;
+        top: auto;
         width: 32px;
         height: 32px;
         font-size: 14px;
+        background-color: #b88e2f;
+        color: #ffffff;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 6;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .inspiration-slide:active .arrow-btn,
+    .inspiration-slide:focus-within .arrow-btn,
+    .inspiration-slide:hover .arrow-btn {
+        opacity: 1;
+        visibility: visible;
     }
 
     .inspiration-controls {
@@ -1440,10 +1503,6 @@ a {
     .dots {
         margin-left: 0;
         margin-top: 10px;
-    }
-
-    .inspiration-slider {
-        scroll-behavior: auto;
     }
 
 

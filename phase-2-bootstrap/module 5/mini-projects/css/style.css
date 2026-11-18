@@ -7,3 +7,17 @@ body {
         width: 800px;
     }
 }
+
+@media (max-width: 600px) {
+    .container1 {
+        width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .user-list {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}

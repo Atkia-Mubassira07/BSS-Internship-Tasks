@@ -1,25 +1,58 @@
-.xl-text {
-    font-size: 65px;
-}
+// Font
+$font-family-sans-serif: 'Poppins', sans-serif;
 
-.header {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('../images/header-background.jpg') left center no-repeat;
-    background-size: cover;
-    height: 600px;
-}
+// Colors
+$primary: #fe6b2a;
+$secondary: #35353a;
+$dark: #000;
+$body-bg: #0c0c0e;
+$body-color: #fff;
 
-.vertical-decoration {
-    top: 12%;
-    width: 24px;
-}
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
 
-@media(max-width: 992px) {
-    xl.text {
-        font-size: 50px;
-    }
+$headings-margin-bottom: $spacer * 1 !default;
+$line-height-base: 1.7 !default;
 
-    .header {
-        text-align: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('../images/header-background.jpg') center center no-repeat;
-    }
-}
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+
+// Buttons
+$button-radius: 50px;
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$navbar-toggler-border-radius: 5px;
+
+// Input
+$input-radius: 0px;
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: 1rem;
+$input-border-radius: $input-radius;
+$input-border-radius-sm: $input-radius;
+$input-border-radius-lg: $input-radius;
+$input-border-color: #666;
+
+@import '../node_modules/bootstrap/scss/bootstrap';

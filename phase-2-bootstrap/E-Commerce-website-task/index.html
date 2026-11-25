@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawsome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SHOP.CO</title>
+</head>
+<body>
+
+    <!--promotion signup banner-->
+    <!--here i used alert class at first i tried to do toast then have some alignment issues so then decided to use alert class-->
+    <div class="container-fluid bg-dark text-light text-center">
+        <div class = "alert alert-dismissible container mb-0">
+            Sign up and get 20% off to your first order. <a href="#" class="alert-link">Sign Up Now</a>
+            <button type="button"
+            class="btn-close d-none d-md-inline-block btn-close-white"
+            data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <!--navigation panel-->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top top-0 bg-white">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bolder fs-1 d-none d-lg-block">SHOP.CO</a>
+            <button 
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                >  
+                <img  src="images/menu_icon.svg" alt="menu">
+            </button>
+
+            <!--as the menu icon becomes left side on small screens thats why i added a separate brand name here-->
+            <a href="#" class="navbar-brand fw-bolder fs-1 d-lg-none">SHOP.CO</a>
+            
+            <div class="navbar-collapse collapse" id="navmenu">
+                <ul class ="navbar-nav ms-auto fs-5 fw-medium">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Men</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">On Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="category.html" class="nav-link">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Brands</a>
+                    </li>
+                </ul>
+
+                <!--search bar for large screens-->
+
+                <form class="d-none d-lg-flex flex-grow-1 ms-3">
+                    <input type="text" class="form-control rounded-5 w-100" placeholder="Search for products..." />
+                </form>
+
+            </div>
+
+            <div> <!--added this div for mobile view so the icons can be on right side -->
+                <!--search button for mobile devices and hidden on large screens--->
+                
+                <button class="btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#searchbar">
+                    <img src="images/search_icon.svg" alt="Search" />
+                </button>
+                
+                <!--card and profiles-->
+                
+                <button type="button" class="btn">
+                    <img src="images/cart_icon.svg" alt="Cart" />
+                </button>
+                
+                <button type="button" class="btn">
+                    <img src="images/profile_icon.svg" alt="Profile" />
+                </button>
+            </div>
+           
+            
+
+        </div>
+
+        <!-- searchbar for mobile device -->
+        <div class="collapse w-100 px-3" id="searchbar">
+            <form class="w-100">
+                <input type="text" class="form-control rounded-5" placeholder="Search for products..." />
+            </form>
+        </div>
+    </nav>
+
+    <!--header or hero section-->
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 pt-5 mt-5 first-col">
+                    <h1 class="xl-text fw-bolder">
+                        FIND CLOTHES THAT MATCHED YOUR STYLE
+                    </h1>
+                    <p class="text-muted my-4">
+                        Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to
+                        your sense of style.
+                    </p>
+                    <a href="#products" class="shop-now btn btn-lg btn-dark rounded-5 px-5 mb-5">Shop Now</a>
+
+                    <!--stats-->
+                    <div class="row mt-5 stats g-3">
+                        <div class="col-md-4 col-6  border-end">
+                            <h2 class="fs-1 fw-bold">200+</h2>
+                            <p>International Brands</p>
+                        </div>
+                        
+                        <div class="col-md-4 col-6 border-end">
+                            <h2 class="fs-1 fw-bold">2,000+</h2>
+                            <p>High-Quality Products</p>
+                        </div>
+                    
+                        <div class="col-md-4 col-12 text-center text-md-start">
+                            <h2 class="fs-1 fw-bold">30,000+</h2>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="">
+                        <img src="images/hero_image.png" alt="" class="img-fluid w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <!--brand section-->
+    <section class="brand container-fluid bg-dark mt-5">
+        <div class="container py-5">
+            <div class="row row-cols-3 row-cols-md-5 g-3">
+                <div class="col">
+                    <img src="images/brand-1.svg" alt="brand1" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <img src="images/brand-2.svg" alt="brand2" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <img src="images/brand-3.svg" alt="brand3" class="img-fluid" />
+                </div>
+                <div class="col  offset-2 offset-md-0">
+                    <img src="images/brand-4.svg" alt="brand4" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <img src="images/brand-5.svg" alt="brand5" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!---New Arrivals section-->
+
+    <section class="newaraivals">
+        <div class="container mt-5 border-bottom">
+            <h1 class="fw-bold text-center xl-text">NEW ARRIVALS</h1>
+           
+            <div class="row mt-5">
+
+                <!--product-1-->
+
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/newA-1.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">T-SHIRT WITH TAPE DETAILS</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                <span class="rating-number">4.5/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$120</span>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--product-2-->
+                
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/newA-2.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Skinny Fit Jeans</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                <span class="rating-number">3.5/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$240</span>
+                                <span class="h3 text-decoration-line-through text-secondary mx-3">$260</span>
+                                <span class="rounded-5 text-danger h5 py-2 px-3" style="background: #ffebeb;">-20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--product-3-->
+                
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/newA-3.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Checkered Shirt</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                <span class="rating-number">4.5/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$180</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--product-4-->
+                
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/newA-4.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Sleeve StripedT-shirt</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                <span class="rating-number">4.5/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$130</span>
+                                <span class="h3 text-decoration-line-through text-secondary mx-3">$160</span>
+                                <span class="rounded-5 text-danger h5 py-2 px-3" style="background: #ffebeb;">-30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-lg btn-outline-dark rounded-5 px-5 my-5">View All</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

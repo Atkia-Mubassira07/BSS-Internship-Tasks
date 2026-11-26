@@ -1,13 +1,38 @@
 .xl-text {
   font-size: 70px;
+  color: #000;
 }
 
 .xl-text-footer {
   font-size: 45px;
 }
 
+.navbar {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+  color: #000;
+}
+
 .header {
   background-color: #f2f0f1;
+  font-family: "Satoshi", sans-serif;
+}
+
+.header .shop-now {
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+}
+
+.brand .container-fluid {
+  background-color: #000;
 }
 
 .dress-styles .container {

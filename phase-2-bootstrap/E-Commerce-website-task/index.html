@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
     <link rel="stylesheet" href="css/fontawsome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,9 +11,8 @@
 </head>
 <body>
 
-    <!--promotion signup banner-->
-    <!--here i used alert class at first i tried to do toast then have some alignment issues so then decided to use alert class-->
-    <div class="container-fluid bg-dark text-light text-center">
+    <!--promotion banner-->
+    <div class="container-fluid bg-black text-light text-center">
         <div class = "alert alert-dismissible container mb-0">
             Sign up and get 20% off to your first order. <a href="#" class="alert-link">Sign Up Now</a>
             <button type="button"
@@ -24,7 +24,7 @@
     <!--navigation panel-->
     <nav class="navbar navbar-expand-lg bg-light sticky-top top-0 bg-white">
         <div class="container">
-            <a href="#" class="navbar-brand fw-bolder fs-1 d-none d-lg-block">SHOP.CO</a>
+            <a href="#" class="navbar-brand fw-bolder fs-1 d-none d-lg-block me-lg-4">SHOP.CO</a>
             <button 
                 class="navbar-toggler border-0"
                 type="button"
@@ -34,17 +34,23 @@
                 <img  src="images/menu_icon.svg" alt="menu">
             </button>
 
-            <!--as the menu icon becomes left side on small screens thats why i added a separate brand name here-->
+            
             <a href="#" class="navbar-brand fw-bolder fs-1 d-lg-none">SHOP.CO</a>
             
             <div class="navbar-collapse collapse" id="navmenu">
-                <ul class ="navbar-nav ms-auto fs-5 fw-medium">
+                <ul class ="navbar-nav fs-5 fw-medium">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">Men</li>
-                        </ul>
-                    </li>
+
+                            <li class="dropdown-item">Women</li>
+
+                            <li class="dropdown-item">T-shirts</li>
+
+                            <li class="dropdown-item">jeans</li>
+                        </ul>    
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">On Sale</a>
                     </li>
@@ -56,7 +62,7 @@
                     </li>
                 </ul>
 
-                <!--search bar for large screens-->
+                <!--search bar-->
 
                 <form class="d-none d-lg-flex flex-grow-1 ms-3">
                     <input type="text" class="form-control rounded-5 w-100" placeholder="Search for products..." />
@@ -64,9 +70,8 @@
 
             </div>
 
-            <div> <!--added this div for mobile view so the icons can be on right side -->
-                <!--search button for mobile devices and hidden on large screens--->
-                
+            <div class="ms-lg-3">
+                <!--for mobile view-->
                 <button class="btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#searchbar">
                     <img src="images/search_icon.svg" alt="Search" />
                 </button>
@@ -81,9 +86,6 @@
                     <img src="images/profile_icon.svg" alt="Profile" />
                 </button>
             </div>
-           
-            
-
         </div>
 
         <!-- searchbar for mobile device -->
@@ -134,11 +136,10 @@
                 </div>
             </div>
         </div>
-
     </header>
     
     <!--brand section-->
-    <section class="brand container-fluid bg-dark mt-5">
+    <section class="brand container-fluid bg-black mt-5">
         <div class="container py-5">
             <div class="row row-cols-3 row-cols-md-5 g-3">
                 <div class="col">
@@ -160,7 +161,7 @@
         </div>
     </section>
     
-    <!---New Arrivals section-->
+    <!--New Arrivals section-->
 
     <section class="newaraivals">
         <div class="container mt-5 border-bottom">
@@ -263,6 +264,370 @@
             </div>
         </div>
     </section>
+
+    <!--top selling-->
+    
+    <section class="newaraivals">
+        <div class="container mt-5">
+            <h1 class="fw-bold text-center xl-text">TOP SELLING</h1>
+    
+            <div class="row mt-5">
+    
+                <!--product-1-->
+    
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/topS-1.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Vertical Striped Shirt</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <span class="rating-number">5.0/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$212</span>
+                                <span class="h3 text-decoration-line-through text-secondary mx-3">$232</span>
+                                <span class="rounded-5 text-danger h5 py-2 px-3" style="background: #ffebeb;">-20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--product-2-->
+    
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/topS-2.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Courage Graphic T-shirt</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <span class="rating-number">4.0/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$145</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!--product-3-->
+    
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/topS-3.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Loose Fit Bermuda Shorts</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <span class="rating-number">3.0/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!--product-4-->
+    
+                <div class="col-12 col-md-3">
+                    <div class="card border-0">
+                        <img src="images/topS-4.svg" alt="new arrival 1" class="card-img-top" />
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Faded Skinny Jeans</h5>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                <span class="rating-number">4.5/5</span>
+                            </div>
+                            <div class="price mt-3 pb-3">
+                                <span class="h3 fw-bold ">$210</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-lg btn-outline-dark rounded-5 px-5 my-5">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Dress styles-->
+
+    <section class="dress-styles">
+        <div class="container my-5 rounded-4 p-5" >
+            <h1 class="fw-bold text-center xl-text">BROWSE BY DRESS STYLES</h1>
+            <div class="row mt-5 g-3">
+                <div class="col-12 col-lg-5">
+                    <img src="images/style-1.svg" alt="dress style 1" class="img-fluid w-100 rounded-4" />
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img src="images/style-2.svg" alt="dress style 2" class="img-fluid w-100 rounded-4" />
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img src="images/style-3.svg" alt="dress style 3" class="img-fluid w-100 rounded-4" />
+                </div>
+                <div class="col-12 col-lg-5">
+                    <img src="images/style-4.svg" alt="dress style 4" class="img-fluid w-100 rounded-4" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Client Review-->
+    <section class="review">
+        <div class="container my-5">
+            <div class="row align-items-center  mb-4 ">
+                <div class="col-9">
+                    <h1 class="fw-bold text-start xl-text">OUR HAPPY CUSTOMERS</h1>
+                </div>
+
+                <!--Scrolling Arrows-->
+                <div class="col-3 text-end">
+                    <button type="button" class="btn" id="prevbtn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button type="button" class="btn" id="nextbtn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="review-cards d-flex flex-row flex-nowrap overflow-auto gap-3" id="review-cards">
+                <!--review 1-->
+                <div class=" card border rounded-4 review-card">
+                    <div class="card-body">
+                        <div class="ratings mb-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Sarah M. <i class="fa-solid fa-circle-check verified text-success mb-2"></i></h5>
+                        <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+                            elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+                    </div>
+                </div>
+    
+                <!--review 2-->
+                <div class=" card border rounded-4 review-card">
+                    <div class="card-body">
+                        <div class="ratings mb-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Alex K. <i class="fa-solid fa-circle-check verified text-success mb-2"></i></h5>
+                        <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.
+                        The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <!--review 3 -->
+                <div class=" card border rounded-4 review-card">
+                    <div class="card-body">
+                        <div class="ratings mb-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">James L.<i class="fa-solid fa-circle-check verified text-success mb-2"></i></h5>
+                        <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                        Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                    </div>
+                </div>
+    
+                <!--review 4 -->
+                <div class=" card border rounded-4 review-card">
+                    <div class="card-body">
+                        <div class="ratings mb-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Mooen.<i class="fa-solid fa-circle-check verified text-success mb-2"></i></h5>
+                         <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The
+                        selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                    </div>
+    
+                </div>
+    
+                <!--review 5 -->
+                <div class=" card border rounded-4 review-card" >
+                    <div class="card-body">
+                        <div class="ratings mb-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Sarah M.<i class="fa-solid fa-circle-check verified text-success mb-2"></i></h5>
+                        <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+                        elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+    
+                    </div>
+    
+                </div>
+    
+                <!--review 6 -->
+                <div class=" card border rounded-4 review-card">
+                    <div class="card-body">
+                        <div class="ratings mb-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Mooen.<i class="fa-solid fa-circle-check verified text-success mb-2"></i></h5>
+                        <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The
+                        selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="subscribe container-fluid my-5">
+        <div class="container bg-black text-white rounded-4 p-5 align-items-center">
+            <div class="row p-3 g-3 align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 ">
+                    <h1 class="fw-bold xl-text-footer">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <form class="row-cols-1 gap-3">
+                        <div class="col mb-2 input-group">
+                            <span class="input-group-text rounded-start-5 border-end-0">
+                                <i class="fa-solid fa-envelope text-muted fs-4"></i>
+                            </span>
+        
+                            <input type="email" class="form-control rounded-end-5 border-start-0" placeholder="Enter your email" />
+                        </div>
+                        <div class="col">
+                            <a href="#" class="btn btn-lg btn-light rounded-5 w-100 text-nowrap">Subscribe To Newsletter</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row border-bottom pb-3 mb-2">
+                <div class="col-12 col-md-4 pb-3">
+                    <h1 class="fw-bolder">SHOP.CO</h1>
+                    <p class="pb-3">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fas fa-circle fa-stack-2x text-white"></i>
+                            <i class="fab fa-twitter fa-stack-1x text-dark"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack ">
+                        <a href="#">
+                            <i class="fas fa-circle fa-stack-2x text-dark"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fas fa-circle fa-stack-2x text-white"></i>
+                            <i class="fab fa-instagram fa-stack-1x text-dark"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fas fa-circle fa-stack-2x text-white"></i>
+                            <i class="fab fa-github fa-stack-1x text-dark"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5 class="fw-semibold">COMPANY</h5>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h5 class="fw-semibold">HELP</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h5 class="fw-semibold">FAQ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h5 class="fw-semibold">RESOURCES</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex justify-content-between align-items-center">
+                <p class="text-muted my-3"> Shop.co &copy 2000-2021, All rights reserved</p>
+                <span class="footer-payment-icons">
+                    <img src="images/visa.svg" alt="Visa">
+                    <img src="images/master-card.svg" alt="master-card">
+                    <img src="images/paypal.svg" alt="paypal">
+                    <img src="images/apple-pay.svg" alt="apple-pay">
+                    <img src="images/gpay.svg" alt="goggle-pay">
+                </span>
+            </div>
+        </div>
+    </footer>
 
 
 

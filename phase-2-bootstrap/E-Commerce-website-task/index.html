@@ -11,46 +11,47 @@
 </head>
 <body>
 
-    <!--promotion banner-->
+    <!-- Promotion banner -->
     <div class="container-fluid bg-black text-light text-center">
-        <div class = "alert alert-dismissible container mb-0">
+        <div class="alert alert-dismissible container mb-0">
             Sign up and get 20% off to your first order. <a href="#" class="alert-link">Sign Up Now</a>
-            <button type="button"
-            class="btn-close d-none d-md-inline-block btn-close-white"
-            data-bs-dismiss="alert"></button>
+            <button
+                type="button"
+                class="btn-close d-none d-md-inline-block btn-close-white"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+            ></button>
         </div>
     </div>
 
-    <!--navigation panel-->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-light sticky-top top-0 bg-white">
         <div class="container">
             <a href="#" class="navbar-brand fw-bolder fs-1 d-none d-lg-block me-lg-4">SHOP.CO</a>
-            <button 
+            <button
                 class="navbar-toggler border-0"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navmenu"
-                >  
-                <img  src="images/menu_icon.svg" alt="menu">
+                aria-controls="navmenu"
+                aria-label="Toggle navigation"
+            >
+                <img src="images/menu_icon.svg" alt="">
             </button>
 
-            
             <a href="#" class="navbar-brand fw-bolder fs-1 d-lg-none">SHOP.CO</a>
-            
+
             <div class="navbar-collapse collapse" id="navmenu">
-                <ul class ="navbar-nav fs-5 fw-medium">
+                <ul class="navbar-nav fs-5 fw-medium">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item">Men</li>
-
-                            <li class="dropdown-item">Women</li>
-
-                            <li class="dropdown-item">T-shirts</li>
-
-                            <li class="dropdown-item">jeans</li>
-                        </ul>    
-
+                            <li><a href="#" class="dropdown-item">Men</a></li>
+                            <li><a href="#" class="dropdown-item">Women</a></li>
+                            <li><a href="#" class="dropdown-item">T-shirts</a></li>
+                            <li><a href="#" class="dropdown-item">jeans</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">On Sale</a>
                     </li>
@@ -62,14 +63,17 @@
                     </li>
                 </ul>
 
-                <!--search bar-->
-
                 <form class="d-none d-lg-flex flex-grow-1 ms-3">
-                    <input type="text" class="form-control rounded-5 w-100" placeholder="Search for products..." />
+                    <input
+                        type="text"
+                        class="form-control rounded-5 w-100"
+                        placeholder="Search for products..."
+                        aria-label="Search for products"
+                    >
                 </form>
-
             </div>
-
+        </div>
+    </nav>
 
     <!--header or hero section-->
 

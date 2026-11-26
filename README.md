@@ -17,7 +17,7 @@ The latest work is an **E-commerce website task** built with HTML, CSS, JavaScri
 |---|---|---|---|
 | 1 | 2 weeks | HTML and CSS | ✅ |
 | 2 | 1 week | Bootstrap 5 | ✅ |
-| 3 | 2 days | Git and GitHub | 🟡 |
+| 3 | 2 days | Git and GitHub | ✅ |
 | 4 | 2 weeks | JavaScript fundamentals | ⬜ |
 | 5 | 3 weeks | Frontend framework | ⬜ |
 | 6 | 2 weeks | Backend basics | ⬜ |
@@ -36,14 +36,15 @@ The latest work is an **E-commerce website task** built with HTML, CSS, JavaScri
 - Responsive layouts, Flexbox, CSS Grid, animations, and forms
 - Udemy course exercises organized by module
 - Mini projects including pricing cards, shoe cards, freelancer forms, and sneaker layouts
+- Furniro website (furniture design based)
 
 ### Bootstrap 5
 
 - Bootstrap components and utilities
 - Responsive websites built with Bootstrap and SCSS
-- E-commerce website homepage
-- Portfolio and business landing pages
-- Vera, e-book, conference, and furniture-style website projects
+- E-commerce website homepage, category page
+- Portfolio and mini projects
+- Vera, e-book, Corso training, Yavin office design
 - Bootstrap, Font Awesome, JavaScript, and dark-mode exercises
 
 ## Featured Projects

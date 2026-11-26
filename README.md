@@ -1,65 +1,94 @@
+I’ll review the repository’s current structure and files first, then rewrite the README to match the latest work accurately.```markdown name=README.md url=https://github.com/Atkia-Mubassira07/BSS-Internship-Tasks/blob/main/README.md
 # BSS Internship Tasks
 
-Welcome! This repository is my work log for the **BSS Software Engineering (SWE) Internship Program**. It holds every task, project and weekly note in one place, so supervisors and teammates can follow my progress and give feedback at any time.
+This repository documents my work throughout the **BSS Software Engineering Internship Program**. It contains my HTML, CSS, Bootstrap, practice projects, assigned tasks, learning notes, and future internship work.
 
-**Intern:** Atkia Mubassira Nafisa
-**Program:** 4 months (16 weeks), 5 days a week, 9 hours a day
+**Intern:** Atkia Mubassira Nafisa  
+**Program:** 4 months (16 weeks), 5 days a week, 9 hours a day  
 **Status:** 🟡 In progress
 
----
+## Latest Update
 
-## For reviewers
+The latest work is an **E-commerce website task** built with HTML, CSS, JavaScript, Bootstrap, and SCSS. The repository also includes multiple Bootstrap course projects and completed exercises from the HTML and CSS learning phase.
 
-- **Where to start:** the [progress tracker](#progress-tracker) below shows what is done and what is next.
-- **Each task** lives in its own folder with a short README (what I built, how to run it, what I learned).
-- **Feedback is very welcome.** Please leave comments on a pull request or open an Issue. I read all of it and I will act on it.
-- **Weekly notes** are in [`docs/learning-log.md`](docs/learning-log.md).
-
----
-
-## Progress tracker
-
-⬜ Not started | 🟡 In progress | ✅ Done
+## Progress Tracker
 
 | Phase | Duration | Focus | Status |
 |---|---|---|---|
-| 1 | 2 weeks | HTML and CSS | ⬜ |
-| 2 | 1 week | Bootstrap 5 | ⬜ |
-| 3 | 2 days | Git and GitHub | ⬜ |
+| 1 | 2 weeks | HTML and CSS | ✅ |
+| 2 | 1 week | Bootstrap 5 | ✅ |
+| 3 | 2 days | Git and GitHub | 🟡 |
 | 4 | 2 weeks | JavaScript fundamentals | ⬜ |
-| 5 | 3 weeks | Frontend framework (React or Angular) | ⬜ |
-| 6 | 2 weeks | Backend basics (Node.js) | ⬜ |
-| 7 | 3 weeks | Backend advanced (FastAPI or .NET) | ⬜ |
+| 5 | 3 weeks | Frontend framework | ⬜ |
+| 6 | 2 weeks | Backend basics | ⬜ |
+| 7 | 3 weeks | Backend advanced | ⬜ |
 | 8 | 2 days | Docker basics | ⬜ |
-| 9 | 2 weeks | Final team project: BSS Restaurant App | ⬜ |
+| 9 | 2 weeks | Final team project | ⬜ |
 
-### Phase 1: HTML and CSS
+## Completed Work
 
-- [ ] Task 1.1: Bangladesh flag using CSS positioning
-- [ ] Task 1.2: Bento-style image gallery with CSS Grid
-- [ ] Task 1.3: Analog clock UI
-- [ ] Task 2.1: Figma to page, Convention Center
-- [ ] Task 2.2: Figma to page, Restaurant
-- [ ] Task 2.3: Figma to page, Furniture e-commerce
-- [ ] Assessment: personal portfolio (static website)
+### HTML and CSS
 
-### Phase 2: Bootstrap
+- Bangladesh flag using CSS positioning
+- Bento-style image gallery using CSS Grid
+- Analog clock interface
+- Convention Center, furniture store, and other Figma implementations
+- Responsive layouts, Flexbox, CSS Grid, animations, and forms
+- Udemy course exercises organized by module
+- Mini projects including pricing cards, shoe cards, freelancer forms, and sneaker layouts
 
-- [ ] Responsive pages converted from Figma using Bootstrap 5
+### Bootstrap 5
 
-*Later phases will get their own checklists as I reach them.*
+- Bootstrap components and utilities
+- Responsive websites built with Bootstrap and SCSS
+- E-commerce website homepage
+- Portfolio and business landing pages
+- Vera, e-book, conference, and furniture-style website projects
+- Bootstrap, Font Awesome, JavaScript, and dark-mode exercises
 
----
+## Featured Projects
 
-## Repository structure
+### E-commerce Website
+
+A responsive e-commerce implementation located in:
+
+[`phase-2-bootstrap/E-Commerce-website-task`](phase-2-bootstrap/E-Commerce-website-task)
+
+**Technologies:** HTML, CSS, Bootstrap 5, JavaScript, SCSS
+
+### Furniture Store
+
+A multi-page furniture e-commerce interface located in:
+
+[`phase-1-html-css/Tasks/Task 2.3`](phase-1-html-css/Tasks/Task%202.3)
+
+### Lumina Creative
+
+A creative portfolio and agency website with about and contact pages:
+
+[`phase-1-html-css/Tasks/Lumina Creative`](phase-1-html-css/Tasks/Lumina%20Creative)
+
+### Bootstrap Course Projects
+
+Additional Bootstrap projects are organized by module:
+
+[`phase-2-bootstrap`](phase-2-bootstrap)
+
+## Repository Structure
 
 ```text
 BSS-Internship-Tasks/
-├── README.md
 ├── docs/
-│   └── learning-log.md
 ├── phase-1-html-css/
+│   ├── Tasks/
+│   └── udemy-course-practices/
 ├── phase-2-bootstrap/
+│   ├── assets/
+│   ├── E-Commerce-website-task/
+│   ├── module-3/
+│   ├── module-4/
+│   └── module-5/
+│   └── ...
 ├── phase-3-git-github/
 ├── phase-4-javascript/
 ├── phase-5-frontend-framework/
@@ -69,48 +98,45 @@ BSS-Internship-Tasks/
 └── phase-9-final-project/
 ```
 
-Each task folder is named like `task-1.1-bangladesh-flag/`.
+## Learning Notes
 
----
+My weekly learning notes are available in [`docs/learning-log.md`](docs/learning-log.md).
 
-## How to run a task
+## Running a Project
 
-| Type | Command |
-|---|---|
-| Static pages (HTML, CSS, JS) | Open `index.html` in a browser |
-| Node.js | `npm install`, then `npm start` |
-| FastAPI | `pip install -r requirements.txt`, then `uvicorn main:app --reload` |
-| Docker | `docker build -t app .`, then `docker run -p 3000:3000 app` |
+Open an HTML project directly in a browser:
 
----
+```bash
+cd "phase-1-html-css/Tasks/Task 1.1"
+open index.html
+```
 
-## Working agreements
+For projects containing a `package.json`, install dependencies and run the configured scripts:
 
-- **Branches:** one branch per task, for example `phase-1/task-1.1-flag`.
-- **Commits:** short and clear, for example `feat: add bento gallery layout` or `fix: clock hand pivot point`.
-- **Pull requests:** a short description and a screenshot or demo link where it makes sense.
-- **Quality:** responsive layouts, semantic HTML, no secrets in the repo (`.env` files stay out of Git).
+```bash
+npm install
+npm start
+```
 
----
+## Technologies
 
-## Weekly summary
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+- SCSS
+- Sass
+- Font Awesome
+- Git and GitHub
+- Responsive web design
+- CSS Flexbox and Grid
 
-| Week | Highlights |
-|---|---|
-| 1 | _To be added_ |
+## Working Agreements
 
----
-
-## Tech stack
-
-HTML5, CSS3, Bootstrap 5, JavaScript, React or Angular, Node.js with Express, Python FastAPI or C# .NET, MongoDB, MySQL or PostgreSQL, Git and GitHub, Docker.
-
----
-
-## Final project
-
-**Pending Idea**: API and web app, delivered with a GitHub repository, documentation, a live demo and a presentation. This section will be filled in as i start the project.
-
----
-
-Thank you to my supervisors and teammates for the guidance and the opportunity to learn here.
+- One branch per task or feature
+- Clear, descriptive commit messages
+- Responsive and semantic layouts
+- Separate files for HTML, CSS, JavaScript, and assets
+- No secrets or environment files in the repository
+- Learning projects organized by internship phase
+```
